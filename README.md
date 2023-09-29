@@ -79,6 +79,7 @@ Step by step:
 /Users/leticia/Downloads/Brasilian_ecommerce_dataset/olist_products_dataset.csvhasbeenuploadedtoe_commerce/olist_products_dataset.csv.
 (base) leticia@ChendeMacBook-Air Desktop %
 ```
+<img src="Images/dataset_in_bucket.png">
 
 
 
