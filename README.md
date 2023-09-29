@@ -41,6 +41,10 @@ Following is a structured model built using the Star Schema; this type of model 
 
 <img src="Images/eCommerce_diagram.jpeg">
 
+### Development and Testing on GCP's Dataproc via Jupyter Notebook
+Prior to the final deployment of the ETL pipeline and execution of SQL queries, all developmental stages and tests were carried out within the Jupyter Notebook environment facilitated by Google Cloud Platform (GCP), utilizing PySpark. This initial phase ensures both the practicality and efficacy of the data transformation procedures, query operations, and other integral components of the data pipeline.
+
+
 
 
 
