@@ -81,6 +81,8 @@ Step by step:
 ```
 <img src="Images/dataset_in_bucket.png">
 
+## Create Cluster in GCP Dataproc
+Please refer to the <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb -> 'Criar Cluster no GCP Dataproc'</a> file for more detailed steps.
 
 
 
