@@ -50,11 +50,19 @@ Firstly, I imported all the CSV data files into a Bucket on the GCP (Google Clou
 ### How to upload dataset files via local computer terminal
 Step by step:
 
->**1st, create a 'key' in GCP IAM & Admin:** 
+>**1st, create a 'key' in GCP IAM & Admin:**
+>
 >Please refer to the <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> file for more detailed steps.
 
 >**2nd, Prepare Python script: upload_files.py**
+>
 >For your reference:<a href="upload_files.py"> upload_files.py</a>
+
+>**3rd, Upload Python script in the terminal**
+>
+pip3 install google-cloud-storage
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
+python3 upload_files.py
 
 
 
