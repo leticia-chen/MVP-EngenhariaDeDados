@@ -45,7 +45,12 @@ Following is a structured model built using the Star Schema; this type of model 
 Prior to the final deployment of the ETL pipeline and execution of SQL queries, all developmental stages and tests were carried out within the Jupyter Notebook environment facilitated by Google Cloud Platform (GCP), utilizing PySpark. This initial phase ensures both the practicality and efficacy of the data transformation procedures, query operations, and other integral components of the data pipeline.
 
 <a href="Dvelopment Stage/mvp_etl_query_develop.ipynb">Pre-Implementation: Development and Testing in Jupyter Notebook via GCP Dataproc</a>
+## Data Loading
+Firstly, I imported all the CSV data files into a Bucket on the GCP (Google Cloud Platform), serving as our Data Lake.
+### How to upload dataset files via local computer terminal
+Step by step:
 
+1st, create a 'key' in GCP IAM & Admin, Please refer to the xxx file for more detailed steps. 
 
 
 
