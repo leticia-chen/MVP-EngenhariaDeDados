@@ -53,7 +53,7 @@ Step by step:
 **1st, create a 'key' in GCP IAM & Admin:** 
 Please refer to the <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> file for more detailed steps.
 **2nd, Prepare Python script: upload_files.py**
-For your reference:
+For your reference:<a href="upload_files.py">upload_files.py</a>
 
 
 
