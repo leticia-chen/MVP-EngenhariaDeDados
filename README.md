@@ -37,12 +37,13 @@ This fact table is based on the olist_order_items_dataset.csv file, which contai
   
 These dimension tables are connected to our single fact table through foreign keys, forming a star schema.
 
+Following is a structured model built using the Star Schema; this type of model is used for Business Intelligence applications. It consists of a central fact table (Fact Table -> List order_items) and one or more dimension tables (Dimension Tables). Through this model, it will be easier to quickly understand the relationships between each table.
+
 <img src="Images/eCommerce_diagram.jpeg">
 
 
 
 
-Following is a structured model built using the Star Schema; this type of model is used for Business Intelligence applications. It consists of a central fact table (Fact Table -> List order_items) and one or more dimension tables (Dimension Tables). Through this model, it will be easier to quickly understand the relationships between each table.
 
 
 
