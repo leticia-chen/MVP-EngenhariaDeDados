@@ -50,7 +50,7 @@ Firstly, I imported all the CSV data files into a Bucket on the GCP (Google Clou
 ### How to upload dataset files via local computer terminal
 Step by step:
 
->**1st, create a 'key' in GCP IAM & Admin:**
+>**1st, Create a 'key' in GCP IAM & Admin:**
 >
 >Please refer to the <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> file for more detailed steps.
 
@@ -64,6 +64,14 @@ Step by step:
 >export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
 >python3 upload_files.py
 >```
+>**4th, Insert the created "Service Account" into the 'Principal' of the bucket
+>```
+>Acesse bucket
+>Click PERMISSIONS->GRANT ACCESS ->
+>Add 'service account' para Principals->
+>Assign roles: select Cloud storage->storage object creator
+>```
+
 
 
 
