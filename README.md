@@ -64,14 +64,21 @@ Step by step:
 >export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
 >python3 upload_files.py
 >```
->**4th, Insert the created "Service Account" into the 'Principal' of the bucket
+>**4th, Insert the created "Service Account" into the 'Principal' of the bucket**
 >```
 >Acesse bucket
 >Click PERMISSIONS->GRANT ACCESS ->
 >Add 'service account' para Principals->
 >Assign roles: select Cloud storage->storage object creator
 >```
-
+```
+(base) leticia@ChendeMacBook-Air Desktop % python3 upload_files.py
+/Users/leticia/Downloads/Brasilian_ecommerce_dataset/olist_sellers_dataset.csvhasbeenuploadedtoe_commerce/olist_sellers_dataset.csv.
+/Users/leticia/Downloads/Brasilian_ecommerce_dataset/olist_orders_dataset.csvhasbeenuploadedtoe_commerce/olist_orders_dataset.csv.
+/Users/leticia/Downloads/Brasilian_ecommerce_dataset/olist_order_items_dataset.csvhas been uploaded to e_commerce/list_order_items_dataset.csv.
+/Users/leticia/Downloads/Brasilian_ecommerce_dataset/olist_products_dataset.csvhasbeenuploadedtoe_commerce/olist_products_dataset.csv.
+(base) leticia@ChendeMacBook-Air Desktop %
+```
 
 
 
