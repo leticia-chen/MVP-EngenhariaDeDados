@@ -20,9 +20,12 @@ This project will answer the following business questions:
 Due to the resource limitations of GCP and limited time, the current analysis is primarily based on questions that can be answered with the available resources. The results of the analysis will be stored in the GCP Bucket (Data Lake) and BigQuery (Data Warehouse).
 ## Data Modeling for E-commerce Analysis
 In this e-commerce analysis project, we opted to use the Star Schema as the structure for our data modeling.
+
 **Fact Table**
 Order Items Fact Table:
+
 This fact table is based on the olist_order_items_dataset.csv file, which contains multiple attributes of order items, such as Order ID, Product ID, price, and quantity, etc.
+
 **Dimension Tables**
 * Order Dimension: Contains data from the olist_orders_dataset.csv file, such as order date, order status, etc.
 * Product Dimension: Contains data from the olist_products_dataset.csv and product_category_name_translation.csv files, such as product name, category, etc.
@@ -31,6 +34,7 @@ This fact table is based on the olist_order_items_dataset.csv file, which contai
 * Review Dimension: Contains data from the olist_order_reviews_dataset.csv file, such as review score, review text, etc.
 * Payment Dimension: Contains data from the olist_order_payments_dataset.csv file, such as payment type, payment value, etc.
 * Geolocation Dimension: Contains data from the olist_geolocation_dataset.csv file, such as postal code, latitude, and longitude, etc.
+  
 These dimension tables are connected to our single fact table through foreign keys, forming a star schema.
 
 Following is a structured model built using the Star Schema; this type of model is used for Business Intelligence applications. It consists of a central fact table (Fact Table -> List order_items) and one or more dimension tables (Dimension Tables). Through this model, it will be easier to quickly understand the relationships between each table.
