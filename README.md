@@ -60,10 +60,10 @@ Step by step:
 
 >**3rd, Upload Python script in the terminal**
 >```
-pip3 install google-cloud-storage
-export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
-python3 upload_files.py
-```
+>pip3 install google-cloud-storage
+>export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your/credentials.json"
+>python3 upload_files.py
+>```
 
 
 
