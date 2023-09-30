@@ -112,11 +112,27 @@ Due to the fact that each data file may contain more than 112,650 rows, it was d
 >* olist_orders_dataset.csv
 >  
 >Through this table, we can perform various time-series analyses, including but not limited to, quarterly sales reports and annual revenue growth.
+>
 >The columns included in this table, such as sales_quantity, revenue, freight_cost, and order_approved_at, have been carefully selected. Specifically, the order_approved_at timestamp allows us to deepen our understanding of how to improve sales strategies within specific time periods.
 
+>**In response to the second question - Create the sales_performance table**
+>
+>The purpose of creating the sales_performance table is to provide a comprehensive view for assessing the sales performance of different product categories and sellers. This table is the result of a join operation between
+>* olist_order_items_dataset.csv,
+>* olist_products_dataset.csv, and
+>* olist_sellers_dataset.csv.
+>Through this table, we can perform multi-dimensional sales analyses, such as which product categories are most popular, which sellers have the best sales performance, or in which regions there are more orders.
 
+>The selected columns like order_id, product_id, seller_id, product_category_name, price, shipping_limit_date, and seller_state have specific purposes. For example, seller_state is used for geographical location analyses, which is very useful for understanding which regions have more active sellers or buyers.
 
+>**In response to the third question - Create the Average Delivery Time Analysis by State table**
+>
+>The purpose of creating this table is to understand the impact of delivery time on customer satisfaction. The table is generated from a join between
+>* olist_orders_dataset.csv and
+>* olist_order_reviews_dataset.csv
+>This table allows us to analyze how different delivery times affect customer reviews, which is crucial for optimizing logistics and increasing customer satisfaction.
 
+>The columns retained after the join include order_id, order_purchase_date, order_delivered_customer_date, and review_score. These fields are essential for calculating the average delivery time and correlating it with the customer review score. Through this table, we can perform queries that help us better understand how to optimize our delivery time to improve customer experience.
 
 
 
