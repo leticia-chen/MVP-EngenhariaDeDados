@@ -321,30 +321,28 @@ Data processing in Dataprep:
 
 Analysis of Average Delivery Time by State
 
-Objective: To understand the average delivery time in order to optimize logistics and increase customer satisfaction.
+**Objective: To understand the average delivery time in order to optimize logistics and increase customer satisfaction.**
+```
+SELECT
+    CEIL(AVG(TIMESTAMP_DIFF(TIMESTAMP(order_delivered_customer_date), TIMESTAMP(order_purchase_date), HOUR)) / 24) AS avg_delivery_time_days,
+    review_score
+FROM
+    solar-dialect-397419.e_commerce.joined_dataset
+GROUP BY review_score
+```
+
 <img src="Images/q3_2.png">
 
+## Self-Assessment
+For this project, I not only learned the entire ETL (Extract, Transform, Load) construction process but also succeeded in implementing these workflows on the Google Cloud Platform cloud. This project is a practical simulation based on e-commerce, but as I am using a test account, there are certain resource limitations. Therefore, I chose to define only three main analytical questions. The advantage is that I don't need to use the entire dataset for analysis. During data analysis with BigQuery, I gained a lot of valuable experience in terms of data availability. At least after answering these three questions, I realized that each of them has the potential for deeper analyses.
 
+Next, I will discuss in detail the self-assessment after each analytical question, including the challenges I faced during these analyses and directions for future optimizations.
 
+**Regarding the first analysis of the first question,** I was able to obtain a performance ranking of sellers based on sales volume and sales value. However, to make this analysis more useful and in-depth, a more comprehensive approach would be to first calculate the average sales over the previous years. Then, I could compare how much the 2018 sales exceed this average in percentage terms and focus especially on the sellers who are performing above average. This would allow me to understand why these sellers are doing better than average, thus providing directions and strategies for improvements.
 
+**Concerning the second analysis of the first question,** I was able to provide valuable insights for the company's decision-making layer, indicating which products are not only more profitable but also more popular in the market. However, there is still room to deepen this analysis. For example, we could examine in more detail the sales growth trends of the top 20 best-selling products over the years. This would not only provide a more comprehensive view of the market but also help the company plan more accurate sales strategies for the future.
 
+**Regarding the second question,** I was able to clearly analyze that transport costs are closely tied to the proportional growth of sales and sales volume. However, there is still room for improvement in this analysis. We can investigate further, for example, what is the percentage of sales performance in areas where transport costs are particularly high relative to total sales. This more detailed analysis will provide additional valuable insights for the company's decision-making, such as the need to adjust logistics or sales strategies.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Regarding the third question,** I was able to analyze in detail that the customer review scores have a significant inverse relationship with the delivery time. However, to make this analysis more valuable, I suggest that we study more deeply the average delivery time in each state and how the reviews are in those locations. This more in-depth analysis by region will help us more accurately adjust and optimize transportation and customer service strategies, thereby increasing customer satisfaction.
 
