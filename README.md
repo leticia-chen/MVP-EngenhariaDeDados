@@ -194,7 +194,7 @@ In this project, data catalog settings are applied to datasets in two locations:
 Please click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> for step-by-step instructions.
 
 Results for one of the tables in BigQuery:
-
+<img src="Images/DataCatalog_bigquery.png">
 
 Results for files in the GCS bucket:
 
