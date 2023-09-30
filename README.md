@@ -230,6 +230,67 @@ WHERE shipping_year = 2018
 ORDER BY shipping_year, rank
 LIMIT 50;
 ```
+Result in BigQuery:
+<img src="Images/q1_a1_1.png">
+<img src="Images/q1_a1_2.png">
+
+```
+# Por receitas
+# sellers_ranking_by_revenue_by_year
+
+SELECT
+    seller_id,
+    shipping_year,
+    seller_state,
+    total_orders,
+    total_revenue,
+    RANK() OVER (PARTITION BY shipping_year ORDER BY total_revenue DESC) AS rank
+FROM solar-dialect-397419._scriptd4e59ccc8771f6e76dee66499daca94bff9c9ecd.seller_performance
+WHERE shipping_year = 2018
+ORDER BY shipping_year, rank
+LIMIT 50;
+```
+Result in BigQuery:
+<img src="Images/q1_a1_3.png">
+
+Through the ranking of the top 50 sellers in terms of revenue, we can observe that some sellers actually made only one order in 2018 but still rank among the top 50 in revenue. Therefore, we can adjust the query to find out that there are a total of 14 sellers in this situation.
+<img src="Images/q1_a1_4.png">
+
+**Analysis 2: Sales Trends by Product Category**
+
+**Objective: To understand which product categories are most popular.**
+```
+# product_category_performance
+
+WITH TopOrders AS (
+  SELECT product_category_name,
+         COUNT(order_id) AS total_orders
+  FROM solar-dialect-397419.e_commerce.sales_performance
+  GROUP BY product_category_name
+  ORDER BY total_orders DESC
+  LIMIT 20
+),
+TopRevenue AS (
+  SELECT product_category_name,
+         ROUND(SUM(price), 2) AS total_revenue
+  FROM solar-dialect-397419.e_commerce.sales_performance
+  GROUP BY product_category_name
+  ORDER BY total_revenue DESC
+  LIMIT 20
+)
+SELECT t1.product_category_name, t1.total_orders, t2.total_revenue
+FROM TopOrders t1
+INNER JOIN TopRevenue t2 ON t1.product_category_name = t2.product_category_name
+ORDER BY t1.total_orders DESC, t2.total_revenue DESC;
+```
+Result presented in Cloud Studio:
+<img src="Images/q1_a2_1.png">
+
+
+
+
+
+
 
 
 
