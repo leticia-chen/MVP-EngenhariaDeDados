@@ -162,6 +162,15 @@ Click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_Spr
 
 <img src="Images/ETL_Dataprep.png">
 
+## Data Quality Applied
+Navigate to Dataplex -> click 'Data Quality' -> click 'CREATE DATA QUALITY SCAN' to implement rules.
+
+Due to the lack of deduplication of order_id in the sales_performance transformation within the Python ETL script, errors were identified during the data quality check. Since the table is already in BigQuery, the correction needs to be made there.
+
+The Data Quality result for the 'sales_performance' table in Dataplex:
+
+
+
 
 
 
