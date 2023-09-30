@@ -99,6 +99,9 @@ root
  |-- price: string (nullable = false)
  |-- freight_value: string (nullable = false)
 ```
+<img src="Images/order_item_dataset.png"
+
+
 
 
 
