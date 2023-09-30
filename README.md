@@ -1,3 +1,6 @@
+## Relatório em Português (Report in Portugues)
+Favor clicar aqui (please click here) <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a>
+
 ## Dataset
 <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Brazilian E-Commerce Public Dataset by Olist</a>
 
