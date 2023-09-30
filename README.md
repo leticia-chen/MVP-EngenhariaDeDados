@@ -104,6 +104,16 @@ Based on the schema information, it is observed that some data types of the colu
 
 Due to the fact that each data file may contain more than 112,650 rows, it was decided to keep only the necessary attributes (columns) when creating new tables for query analysis.
 
+>**In response to the first question - Create the trend_analysis table**
+   
+>The purpose of creating the trend_analysis table is to understand the dynamics of the business over time. This table is the result of a join operation between
+>
+>* olist_order_items_dataset.csv and
+>* olist_orders_dataset.csv
+>  
+>Through this table, we can perform various time-series analyses, including but not limited to, quarterly sales reports and annual revenue growth.
+>The columns included in this table, such as sales_quantity, revenue, freight_cost, and order_approved_at, have been carefully selected. Specifically, the order_approved_at timestamp allows us to deepen our understanding of how to improve sales strategies within specific time periods.
+
 
 
 
