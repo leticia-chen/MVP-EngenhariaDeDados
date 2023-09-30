@@ -160,6 +160,10 @@ For the following steps, you can click here <a href="MVP_SprintIII_project_prese
 ### Method 2: Develop the ETL pipeline using Cloud Dataprep and enable scheduling for automated execution
 Click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> for step-by-step instructions
 
+<img src="Images/ETL_Dataprep.png"
+
+
+
 
 
 
