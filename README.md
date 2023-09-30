@@ -141,6 +141,12 @@ Below is the ETL pipeline developed in Python script:
 
 Please click here <a href="ETL_pipeline_final.py">ETL_pipeline_final.py</a>
 
+For the following steps, you can click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> for more details
+
+* Submit Jobs
+* Workflow Template creation - Insert Job into Dataproc Workflow
+* Cloud Scheduler creation to Automate Workflow Execution
+
 
 
 
