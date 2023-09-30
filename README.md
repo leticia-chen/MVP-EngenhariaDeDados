@@ -84,5 +84,23 @@ Step by step:
 ## Create Cluster in GCP Dataproc
 Please refer to the <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb -> 'Criar Cluster no GCP Dataproc'</a> file for more detailed steps.
 
+## Data Analysis
+Before extracting data from the Data Lake (GCS) and importing it into our data warehouse (BigQuery), a series of cleaning and pre-processing tasks need to be performed to ensure data consistency and accuracy. 
+
+In a PySpark environment, use df.printSchema() to check if the data types are correct. Below is the result of checking one of the datasets.
+```
+# Schema do olist_order_items_dataset.csv
+root
+ |-- order_id: string (nullable = false)
+ |-- order_item_id: string (nullable = false)
+ |-- product_id: string (nullable = false)
+ |-- seller_id: string (nullable = false)
+ |-- shipping_limit_date: string (nullable = false)
+ |-- price: string (nullable = false)
+ |-- freight_value: string (nullable = false)
+```
+
+
+
 
 
