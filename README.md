@@ -171,6 +171,22 @@ The Data Quality result for the 'sales_performance' table in Dataplex:
 
 <img src="Images/DataQuality_result_withErro.png">
 
+**To resolve the duplication issue, data cleansing is performed in BigQuery**
+```
+CREATE OR REPLACE TABLE solar-dialect-397419.e_commerce.sales_performance AS
+SELECT *
+FROM (
+  SELECT *,
+         ROW_NUMBER() OVER (PARTITION BY order_id ORDER BY TIMESTAMP(shipping_limit_date) DESC) AS rn
+  FROM solar-dialect-397419.e_commerce.sales_performance
+)
+WHERE rn = 1;
+```
+**After removing duplication, the status turns to 'Passed':**
+
+
+
+
 
 
 
