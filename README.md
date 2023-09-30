@@ -286,7 +286,18 @@ ORDER BY t1.total_orders DESC, t2.total_revenue DESC;
 Result presented in Cloud Studio:
 <img src="Images/q1_a2_1.png">
 
+### 2nd Question: Based on performance over the years, what is the status of shipping costs?
+Temporal Trends Analysis
 
+* Principle of the Analysis: Conduct monthly and yearly analyses to understand fluctuations in sales volume, revenue, and shipping costs.
+* Objective: To identify temporal trends in sales, revenue, and shipping costs to enable more effective business forecasting and resource allocation.
+
+These analyses will assist in:
+
+1. Performance Forecasting: By observing sales, revenue, and shipping costs over different time periods, you can predict future performance.
+2. Resource Allocation: Understanding the trends in these three indicators (sales, revenue, shipping costs) aids in more effective resource allocation.
+3. Strategy Adjustment: These data can help you identify business areas that need improvement or maintenance.
+4. Cost Control: Analyzing shipping cost trends contributes to cost control and supply chain optimization.
 
 
 
