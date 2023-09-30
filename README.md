@@ -136,7 +136,7 @@ Due to the fact that each data file may contain more than 112,650 rows, it was d
 
 ## ETL Pipeline Development and Submitting it as a Dataproc Job
 In the implementation of the ETL, two approaches were adopted. The first involves writing the ETL as a Python script, submitting it as a job, and then creating a workflow and cloud scheduler for automatic execution (creating the first and second table). The second approach uses Dataprep to create the ETL in a visual environment (generating the third table).
-### Method 1: Write the ETL pipeline in a Python script and then submit it as a job, followed by combining the use of workflow and Cloud Scheduler to achieve automation.
+### Method 1: Write the ETL pipeline in a Python script and then submit it as a job, followed by combining the use of workflow and Cloud Scheduler to achieve automation
 Below is the ETL pipeline developed in Python script:
 
 Please click here <a href="ETL_pipeline_final.py">ETL_pipeline_final.py</a>
@@ -157,6 +157,11 @@ For the following steps, you can click here <a href="MVP_SprintIII_project_prese
    --region southamerica-east1 \
    --jars=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.26.0.jar
   ```
+### Method 2: Develop the ETL pipeline using Cloud Dataprep and enable scheduling for automated execution
+Click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> for step-by-step instructions
+
+
+
 
 
 
