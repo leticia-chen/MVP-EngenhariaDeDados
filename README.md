@@ -146,6 +146,18 @@ For the following steps, you can click here <a href="MVP_SprintIII_project_prese
 * Submit Jobs
 * Workflow Template creation - Insert Job into Dataproc Workflow
 * Cloud Scheduler creation to Automate Workflow Execution
+  ```
+   # The codes to 'submit a job' in the terminal
+   gcloud auth login
+   gcloud config set project [seu projeto ID]
+
+   gcloud dataproc jobs \
+   submit pyspark /path/to/file/ETL_file_name.py \
+   --cluster=seu-cluster-name \
+   --region southamerica-east1 \
+   --jars=gs://spark-lib/bigquery/spark-bigquery-with-dependencies_2.12-0.26.0.jar
+  ```
+
 
 
 
