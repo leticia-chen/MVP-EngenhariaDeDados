@@ -203,6 +203,7 @@ Results for files in the GCS bucket:
 To answer the project questions, I generated three main tables for data analysis. These analyses will be conducted in BigQuery, and the results will be visualized using Cloud Studio.
 ### 1st Question: How is the sales performance for the year 2018?
 To answer this question, two analyses were conducted.
+
 **Analysis 1: This analysis can help understand which sellers have the best sales performance in the year 2018, both in terms of order volume and revenue. This, in turn, allows for more effective inventory management and sales strategy planning.**
 ```
 # Por volume de pedidos
