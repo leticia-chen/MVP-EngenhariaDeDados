@@ -298,6 +298,33 @@ These analyses will assist in:
 2. Resource Allocation: Understanding the trends in these three indicators (sales, revenue, shipping costs) aids in more effective resource allocation.
 3. Strategy Adjustment: These data can help you identify business areas that need improvement or maintenance.
 4. Cost Control: Analyzing shipping cost trends contributes to cost control and supply chain optimization.
+```
+SELECT
+    month_year,
+    COUNT(sales_quantity) AS `Sales Quantity`,
+    SUM(revenue) AS `Revenue`,
+    SUM(freight_cost) AS `Freight Cost`
+FROM solar-dialect-397419.e_commerce.trend_analysis
+GROUP BY month_year
+ORDER BY month_year;
+```
+Result presented in Cloud Studio:
+<img src="Images/q2_1.png">
+
+### 3rd Question: How do customers react to delivery time?
+**Table created in Dataprep and output to BigQuery**
+
+At this point, one row was removed because all the data was concentrated between the years 2016 and 2018. The only exception was one row from the year 2020, which was identified as an outlier.
+
+Data processing in Dataprep:
+<img src="Images/q3_1.png">
+
+Analysis of Average Delivery Time by State
+
+Objective: To understand the average delivery time in order to optimize logistics and increase customer satisfaction.
+<img src="Images/q3_2.png">
+
+
 
 
 
