@@ -135,5 +135,6 @@ Due to the fact that each data file may contain more than 112,650 rows, it was d
 >The columns retained after the join include order_id, order_purchase_date, order_delivered_customer_date, and review_score. These fields are essential for calculating the average delivery time and correlating it with the customer review score. Through this table, we can perform queries that help us better understand how to optimize our delivery time to improve customer experience.
 
 ## ETL Pipeline Development and Submitting it as a Dataproc Job
+In the implementation of the ETL, two approaches were adopted. The first involves writing the ETL as a Python script, submitting it as a job, and then creating a workflow and cloud scheduler for automatic execution (creating the first and second table). The second approach uses Dataprep to create the ETL in a visual environment (generating the third table).
 
 
