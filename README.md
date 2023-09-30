@@ -199,6 +199,39 @@ Results for one of the tables in BigQuery:
 Results for files in the GCS bucket:
 <img src="Images/DataCatalog_bucket.png">
 
+## Data Analysis with BigQuery and Visualization with Cloud Studio
+To answer the project questions, I generated three main tables for data analysis. These analyses will be conducted in BigQuery, and the results will be visualized using Cloud Studio.
+### 1st Question: How is the sales performance for the year 2018?
+To answer this question, two analyses were conducted.
+**Analysis 1: This analysis can help understand which sellers have the best sales performance in the year 2018, both in terms of order volume and revenue. This, in turn, allows for more effective inventory management and sales strategy planning.**
+```
+# Por volume de pedidos
+# sellers_ranking_by_order_by_year
+CREATE OR REPLACE TABLE solar-dialect-397419._scriptd4e59ccc8771f6e76dee66499daca94bff9c9ecd.seller_performance AS
+SELECT
+    seller_id,
+    EXTRACT(YEAR FROM shipping_limit_date) AS shipping_year,
+    seller_state,
+    COUNT(order_id) AS total_orders,
+    ROUND(SUM(price), 2) AS total_revenue
+FROM solar-dialect-397419.e_commerce.sales_performance
+GROUP BY seller_id, shipping_year, seller_state;
+
+SELECT
+    seller_id,
+    shipping_year,
+    seller_state,
+    total_orders,
+    total_revenue,
+    RANK() OVER (PARTITION BY shipping_year ORDER BY total_orders DESC) AS rank
+FROM solar-dialect-397419._scriptd4e59ccc8771f6e76dee66499daca94bff9c9ecd.seller_performance
+WHERE shipping_year = 2018
+ORDER BY shipping_year, rank
+LIMIT 50;
+```
+
+
+
 
 
 
