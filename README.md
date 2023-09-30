@@ -185,7 +185,18 @@ WHERE rn = 1;
 **After removing duplication, the status turns to 'Passed':**
 <img src="Images/DataQuality_result_passed.png">
 
+## Deploy Data Catalog
+In this project, data catalog settings are applied to datasets in two locations:
 
+* Tables in BigQuery
+* Tables or files in the GCS bucket
+  
+Please click here <a href="MVP_SprintIII_project_presentation_portuques.ipynb"> MVP_SprintIII_project_presentation_portuques.ipynb</a> for step-by-step instructions.
+
+Results for one of the tables in BigQuery:
+
+
+Results for files in the GCS bucket:
 
 
 
