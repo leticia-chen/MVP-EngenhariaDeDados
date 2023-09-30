@@ -183,7 +183,7 @@ FROM (
 WHERE rn = 1;
 ```
 **After removing duplication, the status turns to 'Passed':**
-
+<img src="Images/DataQuality_result_passed.png">
 
 
 
