@@ -134,6 +134,6 @@ Due to the fact that each data file may contain more than 112,650 rows, it was d
 
 >The columns retained after the join include order_id, order_purchase_date, order_delivered_customer_date, and review_score. These fields are essential for calculating the average delivery time and correlating it with the customer review score. Through this table, we can perform queries that help us better understand how to optimize our delivery time to improve customer experience.
 
-# ETL Pipeline Development and Submitting it as a Dataproc Job
+## ETL Pipeline Development and Submitting it as a Dataproc Job
 
 
