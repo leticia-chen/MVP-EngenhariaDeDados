@@ -169,7 +169,7 @@ Due to the lack of deduplication of order_id in the sales_performance transforma
 
 The Data Quality result for the 'sales_performance' table in Dataplex:
 
-
+<img src="Images/DataQuality_result_withErro.png">
 
 
 
