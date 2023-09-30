@@ -100,6 +100,9 @@ root
  |-- freight_value: string (nullable = false)
 ```
 <img src="Images/order_item_dataset.png">
+Based on the schema information, it is observed that some data types of the columns are incorrect after reading, so it is necessary to address this during the transformation stage. In addition, missing data parts will be filled with 'null'. Additionally, since the project does not involve machine learning at this stage, 'one-hot encoding' will not be applied.
+
+Due to the fact that each data file may contain more than 112,650 rows, it was decided to keep only the necessary attributes (columns) when creating new tables for query analysis.
 
 
 
