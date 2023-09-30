@@ -197,6 +197,7 @@ Results for one of the tables in BigQuery:
 <img src="Images/DataCatalog_bigquery.png">
 
 Results for files in the GCS bucket:
+<img src="Images/DataCatalog_bucket.png">
 
 
 
