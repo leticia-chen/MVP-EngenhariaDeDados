@@ -139,6 +139,8 @@ In the implementation of the ETL, two approaches were adopted. The first involve
 ### Method 1: Write the ETL pipeline in a Python script and then submit it as a job, followed by combining the use of workflow and Cloud Scheduler to achieve automation.
 Below is the ETL pipeline developed in Python script:
 
+Please click here<a href="ETL_pipeline_final.py">ETL_pipeline_final.py</a>
+
 
 
 
